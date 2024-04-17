@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/back"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/baby_green">
+
+    <TextView
+        android:id="@+id/appNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/smarty"
+        android:textColor="@color/dark_green"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:id="@+id/welcomeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome"
+        android:textColor="@color/dark_green"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="30dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/education" />
+
+    <Button
+        android:id="@+id/buttonStudent"
+        style="@style/ButtonStudentStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/dark_green"
+        android:textColor="@color/white"
+        android:text="@string/student"
+        android:textSize="30sp"
+
+        android:layout_marginTop="20dp" />
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/about_us"
+        android:background="@color/dark_green"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_gravity="left"/>
+</LinearLayout>

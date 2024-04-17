@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/baby_green"
+    tools:context=".About_Us_Activity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="270dp"
+        android:layout_height="270dp"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center"
+        android:src= "@drawable/education" />
+
+    <TextView
+        android:id="@+id/hello"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello"
+        android:textColor="@color/dark_green"
+        android:layout_marginBottom="15dp"
+    android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/aboutText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/about_us_description"
+        android:padding="16dp"
+        android:layout_marginBottom="15dp"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/Respect"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Respect"
+        android:textColor="@color/dark_green"
+        android:layout_marginBottom="15dp"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/back"
+        android:background="@color/dark_green"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_gravity="end"/>
+
+</LinearLayout>

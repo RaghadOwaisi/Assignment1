@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Assignment1</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login"> Login </string>
+    <string name="logo_desc">Logo</string>
+    <string name="student_login" />
+    <string name="smarty">Smarty</string>
+    <string name="welcome">Welcome!</string>
+    <string name="student">Student</string>
+    <string name="back">Back</string>
+    <string name="about_us">About Us</string>
+    <string name="about_us_description">Welcome to our Palestinian Android application to help students fill their time with useful things and learn English and mathematics. The program is specialized for students below the third grade and is even usable for kindergarten students. I hope you benefit and like it.</string>
+    <string name="hello">Hello students and parents.</string>
+    <string name="Respect">My respect,\nProgrammer Raghad Owaisi</string>
+    <string name="dummy_content">Dummy Content</string>
+    <string name="log_in_page">Log In page</string>
+    <string name="math_course">Math course</string>
+    <string name="english_course">English course</string>
+    <string name="english_description">English description</string>
+    <string name="math_description">Math description</string>
+</resources>
