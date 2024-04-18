@@ -28,27 +28,39 @@ public class StudentLoginActivity extends AppCompatActivity {
         rememberMeCheckBox = findViewById(R.id.rememberMeCheckBox);
 
         sharedPreferences = getSharedPreferences("LoginPrefs", MODE_PRIVATE);
-        checkPreferences();
 
-        loginButton.setOnClickListener(v -> {
-            String username = usernameEditText.getText().toString().trim();
-            String password = passwordEditText.getText().toString().trim();
-
-            if (username.isEmpty() || password.isEmpty()) {
-                Toast.makeText(StudentLoginActivity.this, "Username or password cannot be empty", Toast.LENGTH_SHORT).show();
-            } else {
-                if (rememberMeCheckBox.isChecked()) {
-                    saveLoginDetails(username, password);
-                } else {
-                    clearLoginDetails();
-                }
-                Intent intent = new Intent(StudentLoginActivity.this, CoursesActivity.class);
-                startActivity(intent);
-                finish();
-            }
-        });
-
+        loginButton.setOnClickListener(v -> attemptLogin());
         backButton.setOnClickListener(v -> finish());
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        checkPreferences();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        if (rememberMeCheckBox.isChecked()) {
+            saveLoginDetails(usernameEditText.getText().toString().trim(),
+                    passwordEditText.getText().toString().trim());
+        } else {
+            clearLoginDetails();
+        }
+    }
+
+    private void attemptLogin() {
+        String username = usernameEditText.getText().toString().trim();
+        String password = passwordEditText.getText().toString().trim();
+
+        if (username.isEmpty() || password.isEmpty()) {
+            Toast.makeText(this, "Username or password cannot be empty", Toast.LENGTH_SHORT).show();
+        } else {
+            Intent intent = new Intent(this, CoursesActivity.class);
+            startActivity(intent);
+            finish();
+        }
     }
 
     private void checkPreferences() {

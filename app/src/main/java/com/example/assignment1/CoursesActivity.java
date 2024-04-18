@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class CoursesActivity extends AppCompatActivity {
 
-    private static final String TAG = "CoursesActivity";
+    String TAG = "CoursesActivity";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

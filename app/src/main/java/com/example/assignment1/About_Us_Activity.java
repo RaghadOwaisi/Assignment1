@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class About_Us_Activity extends AppCompatActivity {
 
-    private static final String TAG = "AboutUsActivity";
+     String TAG = "AboutUsActivity";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

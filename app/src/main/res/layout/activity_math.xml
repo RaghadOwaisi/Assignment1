@@ -5,7 +5,6 @@
     android:orientation="vertical"
     android:padding="16dp">
 
-    <!-- First Row with three images -->
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="177dp"
@@ -65,7 +64,6 @@
             android:src="@drawable/six" />
     </LinearLayout>
 
-    <!-- Third Row with three images -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="165dp"
@@ -95,7 +93,6 @@
             android:src="@drawable/nine" />
     </LinearLayout>
 
-    <!-- Fourth Row with one image -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="165dp"

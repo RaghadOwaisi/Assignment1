@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MathActivity extends AppCompatActivity {
 
-    private static final String TAG = "MathActivity";
+    String TAG = "MathActivity";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

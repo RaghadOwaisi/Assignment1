@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class EnglishActivity extends AppCompatActivity {
 
-    private static final String TAG = "EnglishActivity";
+     String TAG = "EnglishActivity";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
